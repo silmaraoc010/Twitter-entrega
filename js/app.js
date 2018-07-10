@@ -28,6 +28,15 @@ window.onload = function () {
         character.value =("-"+(long-maximum));
       }
   };
+  // função para aumentar a caixa
+  function autoResize()
+    {
+        objTextArea = document.getElementById('words');
+        while (objTextArea.scrollHeight > objTextArea.offsetHeight)
+        {
+            objTextArea.rows += 1;
+        }
+    }
   
 // função para postar a mensagem//
   function PostMessage() {

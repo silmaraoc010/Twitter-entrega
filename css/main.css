@@ -61,6 +61,7 @@ main {
   resize: none;
   width: 80%;
   text-align: justify;
+  overflow: hidden;
   }
 
 hr {
