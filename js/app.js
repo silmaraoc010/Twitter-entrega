@@ -1,6 +1,7 @@
+var button = document.getElementById("button-twittear");
+
 window.onload = function () {
 //  evento para inserir a mensagem//
-  var button = document.getElementById("button-twittear");
     button.addEventListener("click", PostMessage); //adicionando o contador de letras//
   var textArea = document.getElementById("words");
     textArea.addEventListener("keyup", ChangeColor); 
@@ -28,15 +29,6 @@ window.onload = function () {
         character.value =("-"+(long-maximum));
       }
   };
-  // função para aumentar a caixa
-  function autoResize()
-    {
-        objTextArea = document.getElementById('words');
-        while (objTextArea.scrollHeight > objTextArea.offsetHeight)
-        {
-            objTextArea.rows += 1;
-        }
-    }
   
 // função para postar a mensagem//
   function PostMessage() {
@@ -56,3 +48,4 @@ window.onload = function () {
         }
     };
   
+   
